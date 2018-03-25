@@ -19,6 +19,7 @@ class SongsController < ApplicationController
   end
 
   def show
+    set_song
   end
 
   def update
@@ -38,5 +39,5 @@ class SongsController < ApplicationController
   def set_song
     @song = Song.find(params[:id])
   end
-  
+
 end
